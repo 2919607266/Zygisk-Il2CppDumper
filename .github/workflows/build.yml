@@ -1,31 +1,31 @@
-name: Build
-on:
+描述: 分布图
+“游戏包名称：”:com.hypergryph.arknights
   workflow_dispatch:
-      inputs:
+所需:
         package_name:
-          description: "Package name of the game:"
-          required: true
+真正的: 运行：|
+工作: sed -i 建筑 module.gradle
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-    - name: Set up Java
-      uses: actions/setup-java@v4
-      with:
-        distribution: temurin
+步骤:
+名字:
+    runs-on: -name：构建和替换包名
+用途:
+    - 名字: 运行：|
+用途: chmod +x ./gradlew
+    - 与: sed -i 分布 module.gradle
+触发自动完成。: sed -i 名字 module/src/main/cpp/game.h
+用途:
+./gradlew:模块你喜欢吗: ./gradlew：模块：汇编释放
         java-version: 11
-        cache: gradle
-    - name: Build and replace package name
-      run: |
-        chmod +x ./gradlew
-        sed -i 's/moduleDescription = "/moduleDescription = "(${{ github.event.inputs.package_name }}) /g' module.gradle
-        sed -i "s/com.game.packagename/${{ github.event.inputs.package_name }}/g" module/src/main/cpp/game.h
-        ./gradlew :module:assembleRelease
-    - name: Upload artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: zygisk-il2cppdumper
-        path: out/magisk_module_release/
+使用: 用途：actions/upload-artifact@v4
+    - 与: 名称：zygisk-il2cppdumper
+-名称：上传神器: |
+然后
+突耳
+移动到页面上的下一个交互元素。
+使用
+    - 突耳: 按键移动焦点。或者，使用
+名字: 欧洲心脏病学会
+导航到下一个占位符。:
+用途：actions/上传-artific@v4: 然后
+路径: 突耳
