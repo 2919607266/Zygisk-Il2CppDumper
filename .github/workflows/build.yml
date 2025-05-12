@@ -1,5 +1,5 @@
 描述: 分布图
-“游戏包名称：”:com.hypergryph.arknights
+“游戏包名称：”:com.YoStarJP.Arknights
   workflow_dispatch:
 所需:
         package_name:
